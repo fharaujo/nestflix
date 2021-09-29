@@ -9,15 +9,17 @@ import { GenresService } from './genres/genres.service';
 import { GenresModule } from './genres/genres.module';
 import { ParticipantsController } from './participants/participants.controller';
 import { ParticipantsModule } from './participants/participants.module';
+import { PrismaService } from './prisma/prisma.service';
+import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
-  imports: [MoviesModule, GenresModule, ParticipantsModule],
+  imports: [MoviesModule, GenresModule, ParticipantsModule, PrismaModule],
   controllers: [
     AppController,
     MoviesController,
     GenresController,
     ParticipantsController,
   ],
-  providers: [AppService, MoviesService, GenresService],
+  providers: [AppService, MoviesService, GenresService, PrismaService],
 })
 export class AppModule {}
