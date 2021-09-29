@@ -12,6 +12,7 @@ model Movie {
   name           String
   image          String?
   date_published String
+  duration       Int
   genre          Genre[]
   participantes  Participant[]
 }
