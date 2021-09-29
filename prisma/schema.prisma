@@ -9,3 +9,33 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+
+
+// schema nestflix
+
+model Movie {
+  id            Int           @default(autoincrement()) @id
+  name          String
+  image         String?
+  date_published String
+  genre Genre[]
+  participantes Participant[]
+}
+
+model Genre{
+  id Int @default(autoincrement()) @id
+  name String
+  movieId Int?
+  movie   Movie? @relation(fields: [movieId], references: [id])
+
+}
+
+model Participant {
+  id      Int     @default(autoincrement()) @id 
+  name    String
+  image   String
+  birth   String
+  movieId Int?
+  movie   Movie? @relation(fields: [movieId], references: [id])
+
+}
