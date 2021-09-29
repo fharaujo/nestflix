@@ -1,41 +1,38 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+generator client {
+  provider = "prisma-client-js"
+}
 
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider = "prisma-client-js"
-}
-
-
-// schema nestflix
-
 model Movie {
-  id            Int           @default(autoincrement()) @id
-  name          String
-  image         String?
+  id             Int           @id @default(autoincrement())
+  name           String
+  image          String?
   date_published String
-  genre Genre[]
-  participantes Participant[]
+  genre          Genre[]
+  participantes  Participant[]
 }
 
-model Genre{
-  id Int @default(autoincrement()) @id
-  name String
+model Genre {
+  id      Int    @id @default(autoincrement())
+  name    String
   movieId Int?
   movie   Movie? @relation(fields: [movieId], references: [id])
 
+  @@index([movieId], map: "Genre_movieId_fkey")
 }
 
 model Participant {
-  id      Int     @default(autoincrement()) @id 
+  id      Int    @id @default(autoincrement())
   name    String
   image   String
   birth   String
+  staff   String
   movieId Int?
   movie   Movie? @relation(fields: [movieId], references: [id])
 
+  @@index([movieId], map: "Participant_movieId_fkey")
 }
