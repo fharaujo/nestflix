@@ -5,10 +5,12 @@ import { PrismaService } from 'src/prisma/prisma.service';
 export class MoviesService {
   constructor(private prisma: PrismaService) {}
 
+  // functions get all movies
   async findMany(): Promise<Movie[]> {
     return this.prisma.movie.findMany();
   }
 
+  // function by id movies
   async getByIdMovies(movieId: number): Promise<Movie> {
     return this.prisma.movie.findUnique({
       where: {
@@ -30,5 +32,10 @@ export class MoviesService {
         },
       },
     });
+  }
+
+  // function create movie
+  async createMovie(data: Prisma.MovieCreateInput): Promise<Movie> {
+    return this.prisma.movie.create({ data });
   }
 }

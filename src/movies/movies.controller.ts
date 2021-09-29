@@ -1,8 +1,10 @@
 import {
+  Body,
   Controller,
   Get,
   Param,
   ParseIntPipe,
+  Post,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -26,5 +28,12 @@ export class MoviesController {
   @UsePipes(ValidationPipe)
   async getByIdMovie(@Param('id', ParseIntPipe) id: number) {
     return this.moviesService.getByIdMovies(id);
+  }
+
+  // route create movie
+  @Post()
+  @UsePipes(ValidationPipe)
+  async createMovie(@Body() movie: createMoviesDto): Promise<Movie> {
+    return this.moviesService.createMovie(movie);
   }
 }
