@@ -14,7 +14,7 @@ model Movie {
   date_published String
   duration       Int
   genre          Genre[]
-  participantes  Participant[]
+  participants   Participant[]
 }
 
 model Genre {
