@@ -12,7 +12,12 @@ import { ParticipantsModule } from './participants/participants.module';
 
 @Module({
   imports: [MoviesModule, GenresModule, ParticipantsModule],
-  controllers: [AppController, MoviesController, GenresController, ParticipantsController],
+  controllers: [
+    AppController,
+    MoviesController,
+    GenresController,
+    ParticipantsController,
+  ],
   providers: [AppService, MoviesService, GenresService],
 })
 export class AppModule {}
