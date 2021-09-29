@@ -2,11 +2,11 @@ import { IsNotEmpty, IsOptional } from 'class-validator';
 
 export class createMoviesDto {
   @IsNotEmpty()
-  nome: string;
+  name: string;
 
   @IsOptional()
   image?: string;
 
-  data_published: string;
+  date_published: string;
   duration: number;
 }

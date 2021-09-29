@@ -31,9 +31,9 @@ export class MoviesController {
   }
 
   // route create movie
-  @Post()
+  @Post('/create')
   @UsePipes(ValidationPipe)
-  async createMovie(@Body() movie: createMoviesDto): Promise<Movie> {
-    return this.moviesService.createMovie(movie);
+  async createMovie(@Body() data: createMoviesDto): Promise<Movie> {
+    return this.moviesService.createMovie(data);
   }
 }
