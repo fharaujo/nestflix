@@ -1,3 +1,3 @@
-export class createFilmeDto {
+export class createGenresDto {
   nome: string;
 }

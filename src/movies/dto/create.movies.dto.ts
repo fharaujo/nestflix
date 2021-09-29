@@ -1,6 +1,6 @@
 import { IsNotEmpty, IsOptional } from 'class-validator';
 
-export class createFilmeDto {
+export class createMoviesDto {
   @IsNotEmpty()
   nome: string;
 
