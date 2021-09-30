@@ -7,6 +7,7 @@ export class createMoviesDto {
   @IsOptional()
   image?: string;
 
+  @IsNotEmpty()
   date_published: string;
   duration: number;
 }
