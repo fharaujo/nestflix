@@ -6,6 +6,7 @@ import {
   ParseIntPipe,
   Post,
   Put,
+  Delete,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -46,5 +47,12 @@ export class MoviesController {
     @Body() movie: createMoviesDto,
   ): Promise<Movie> {
     return this.moviesService.updateMovie(id, movie);
+  }
+
+  // route delete one movie
+  @Delete('/delete/:id')
+  @UsePipes(ValidationPipe)
+  async deleteOneMovie(@Param('id', ParseIntPipe) id: number): Promise<Movie> {
+    return this.moviesService.deleteMovie(id);
   }
 }

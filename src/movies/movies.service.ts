@@ -49,4 +49,11 @@ export class MoviesService {
       data,
     });
   }
+
+  // functions delete one movie
+  async deleteMovie(id: number): Promise<Movie> {
+    return this.prisma.movie.delete({
+      where: { id },
+    });
+  }
 }
