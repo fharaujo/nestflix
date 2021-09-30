@@ -38,4 +38,15 @@ export class MoviesService {
   async createMovie(data: Prisma.MovieCreateInput): Promise<Movie> {
     return this.prisma.movie.create({ data });
   }
+
+  // functions update movie
+  async updateMovie(
+    movieId: number,
+    data: Prisma.MovieCreateInput,
+  ): Promise<Movie> {
+    return this.prisma.movie.update({
+      where: { id: movieId },
+      data,
+    });
+  }
 }
