@@ -17,5 +17,9 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], createGenresDto.prototype, "name", void 0);
+__decorate([
+    (0, class_validator_1.IsOptional)(),
+    __metadata("design:type", Number)
+], createGenresDto.prototype, "movieId", void 0);
 exports.createGenresDto = createGenresDto;
 //# sourceMappingURL=create.genres.dto.js.map

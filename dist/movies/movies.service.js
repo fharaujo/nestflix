@@ -17,7 +17,23 @@ let MoviesService = class MoviesService {
         this.prisma = prisma;
     }
     async findMany() {
-        return this.prisma.movie.findMany();
+        return this.prisma.movie.findMany({
+            include: {
+                participants: {
+                    select: {
+                        name: true,
+                        image: true,
+                        birth: true,
+                        staff: true,
+                    },
+                },
+                genre: {
+                    select: {
+                        name: true,
+                    },
+                },
+            },
+        });
     }
     async getByIdMovies(movieId) {
         return this.prisma.movie.findUnique({

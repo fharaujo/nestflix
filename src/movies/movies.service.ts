@@ -7,7 +7,23 @@ export class MoviesService {
 
   // functions get all movies
   async findMany(): Promise<Movie[]> {
-    return this.prisma.movie.findMany();
+    return this.prisma.movie.findMany({
+      include: {
+        participants: {
+          select: {
+            name: true,
+            image: true,
+            birth: true,
+            staff: true,
+          },
+        },
+        genre: {
+          select: {
+            name: true,
+          },
+        },
+      },
+    });
   }
 
   // function by id movies

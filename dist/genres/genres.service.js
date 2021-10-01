@@ -19,16 +19,14 @@ let GenresService = class GenresService {
     async findMany() {
         return this.prisma.genre.findMany();
     }
-    async getByIdGenre(id) {
+    async getByIdGenre(genreId) {
         return this.prisma.genre.findUnique({
-            where: { id },
+            where: {
+                id: genreId,
+            },
         });
     }
     async createGenre(data) {
-        const name = await this.prisma.genre.findMany({
-            where: { name: data.name },
-        });
-        console.log(name);
         return this.prisma.genre.create({ data });
     }
     async updateGenre(genreId, data) {

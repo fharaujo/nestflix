@@ -25,5 +25,9 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], createMoviesDto.prototype, "date_published", void 0);
+__decorate([
+    (0, class_validator_1.IsNotEmpty)(),
+    __metadata("design:type", String)
+], createMoviesDto.prototype, "duration", void 0);
 exports.createMoviesDto = createMoviesDto;
 //# sourceMappingURL=create.movies.dto.js.map
