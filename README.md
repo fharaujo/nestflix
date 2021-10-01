@@ -93,8 +93,9 @@ OBS: O mesmo padrão segue para as outras rotas.
 
   {
     "name": "Nome do Participante",
-    "imagem": "URL Imagem",
-    "birth": "00/00/0000"
+    "image": "URL Imagem",
+    "birth": "00/00/0000",
+    "staff": "Profissão"
   }
   ```
 
