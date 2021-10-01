@@ -1,4 +1,4 @@
-import { IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, IsOptional } from 'class-validator';
 export class createParticipantsDto {
   @IsNotEmpty()
   name: string;
@@ -11,4 +11,7 @@ export class createParticipantsDto {
 
   @IsNotEmpty()
   staff: string;
+
+  @IsOptional()
+  movieId: number;
 }
