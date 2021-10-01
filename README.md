@@ -50,7 +50,7 @@ http://localhost:3000/v1/movies/list/id
 
 
 # rota criar filme
-http://localhost:3000/v1/movies
+http://localhost:3000/v1/movies/create
 
 # rota atualizar um filme por id
 http://localhost:3000/v1/movies/update/id
