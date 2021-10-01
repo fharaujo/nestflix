@@ -50,7 +50,7 @@ http://localhost:3000/v1/movies/list/id
 
 
 # rota criar filme
-http://localhost:3000/v1/movies
+http://localhost:3000/v1/movies/create
 
 # rota atualizar um filme por id
 http://localhost:3000/v1/movies/update/id
@@ -63,7 +63,7 @@ OBS: O mesmo padrão segue para as outras rotas.
 
 ```
 <br><br>
-## Estruturas dos dos dados
+## Estruturas dos dados [Inserção e Atualização]
 
 
 ```
@@ -93,8 +93,9 @@ OBS: O mesmo padrão segue para as outras rotas.
 
   {
     "name": "Nome do Participante",
-    "imagem": "URL Imagem",
-    "birth": "00/00/0000"
+    "image": "URL Imagem",
+    "birth": "00/00/0000",
+    "staff": "Profissão"
   }
   ```
 
