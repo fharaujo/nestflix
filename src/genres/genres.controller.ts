@@ -14,7 +14,7 @@ import { GenresService } from './genres.service';
 import { createGenresDto } from './dto/create.genres.dto';
 import { Genre } from '.prisma/client';
 
-@Controller('genres')
+@Controller('/v1/genres')
 export class GenresController {
   constructor(private readonly genresService: GenresService) {}
 

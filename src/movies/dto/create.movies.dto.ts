@@ -9,5 +9,6 @@ export class createMoviesDto {
 
   @IsNotEmpty()
   date_published: string;
+  @IsNotEmpty()
   duration: number;
 }

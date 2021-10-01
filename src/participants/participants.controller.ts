@@ -14,7 +14,7 @@ import { ParticipantsService } from './participants.service';
 import { createParticipantsDto } from './dto/create.participants.dto';
 import { Participant } from '.prisma/client';
 
-@Controller('participants')
+@Controller('/v1/participants')
 export class ParticipantsController {
   constructor(private readonly participantsService: ParticipantsService) {}
 

@@ -12,9 +12,11 @@ export class GenresService {
   }
 
   // function by id genre
-  async getByIdGenre(id: number): Promise<Genre> {
+  async getByIdGenre(genreId: number): Promise<Genre> {
     return this.prisma.genre.findUnique({
-      where: { id },
+      where: {
+        id: genreId,
+      },
     });
   }
 

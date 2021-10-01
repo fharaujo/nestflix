@@ -11,6 +11,7 @@ import { ParticipantsController } from './participants/participants.controller';
 import { ParticipantsModule } from './participants/participants.module';
 import { PrismaService } from './prisma/prisma.service';
 import { PrismaModule } from './prisma/prisma.module';
+import { ParticipantsService } from './participants/participants.service';
 
 @Module({
   imports: [MoviesModule, GenresModule, ParticipantsModule, PrismaModule],
@@ -20,6 +21,12 @@ import { PrismaModule } from './prisma/prisma.module';
     GenresController,
     ParticipantsController,
   ],
-  providers: [AppService, MoviesService, GenresService, PrismaService],
+  providers: [
+    AppService,
+    MoviesService,
+    GenresService,
+    ParticipantsService,
+    PrismaService,
+  ],
 })
 export class AppModule {}
