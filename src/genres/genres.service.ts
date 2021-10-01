@@ -1,4 +1,4 @@
-import { Genre } from '.prisma/client';
+import { Genre, Prisma } from '.prisma/client';
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/prisma/prisma.service';
 
@@ -9,5 +9,32 @@ export class GenresService {
   // functions all genres
   async findMany(): Promise<Genre[]> {
     return this.prisma.genre.findMany();
+  }
+
+  // function by id genre
+  async getByIdGenre(id: number): Promise<Genre> {
+    return this.prisma.genre.findUnique({
+      where: { id },
+    });
+  }
+
+  // function create genre
+  async createGenre(data: Prisma.GenreCreateInput): Promise<Genre> {
+    return this.prisma.genre.create({ data });
+  }
+
+  // function update genre
+  async updateGenre(genreId: number, data: Prisma.GenreCreateInput) {
+    return this.prisma.genre.update({
+      where: { id: genreId },
+      data,
+    });
+  }
+
+  // function delete genre
+  async deleteGenre(id: number) {
+    return this.prisma.genre.delete({
+      where: { id },
+    });
   }
 }
