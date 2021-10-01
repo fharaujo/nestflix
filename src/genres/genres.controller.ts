@@ -9,7 +9,6 @@ import {
   ParseIntPipe,
   Put,
   Delete,
-  HttpCode,
 } from '@nestjs/common';
 import { GenresService } from './genres.service';
 import { createGenresDto } from './dto/create.genres.dto';
