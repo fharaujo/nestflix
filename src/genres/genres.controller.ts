@@ -39,6 +39,7 @@ export class GenresController {
     return this.genresService.createGenre(data);
   }
 
+  // route update genre
   @Put('/update/:id')
   @UsePipes(ValidationPipe)
   async updateGenre(
@@ -48,6 +49,7 @@ export class GenresController {
     return this.genresService.updateGenre(id, data);
   }
 
+  // route delete genre
   @Delete('/delete/:id')
   @UsePipes(ValidationPipe)
   async deleteGenre(@Param('id', ParseIntPipe) id: number): Promise<Genre> {
