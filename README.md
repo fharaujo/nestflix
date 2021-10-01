@@ -1,6 +1,7 @@
 <p align="center"
 
 <a href="https://blueedtech.com.br/" target="blank"><img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif" width="320" alt="Nest Logo" /></a>
+Blue Edtech - Fábio Araujo
 
 </p>
 <br><br>
