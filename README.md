@@ -38,7 +38,7 @@ $ npm run start
 http://localhost:3000
 ```
 
-## Algumas URI's base da aplicação
+## URI's base da aplicação
 
 ```
 # rota de todos os filmes
@@ -55,10 +55,53 @@ http://localhost:3000/v1/movies
 # rota atualizar um filme por id
 http://localhost:3000/v1/movies/update/id
 
+# rota deletar um filme por id
+http://localhost:3000/v1/movies/delete/id
+
 
 OBS: O mesmo padrão segue para as outras rotas.
 
 ```
+<br><br>
+## Estruturas dos dos dados
+
+
+```
+# Filmes:
+
+{
+  "movie": "Nome do Filme",
+  "image": "URL da imagem",
+  "date_published": "Ano",
+  "duration": "Minutos ou Horas",
+}
+```
+
+
+```
+# Genero:
+
+  {
+    "name": "Gênero do filme"
+  }
+  ```
+
+
+
+```
+# Participantes:
+
+  {
+    "name": "Nome do Participante",
+    "imagem": "URL Imagem",
+    "birth": "00/00/0000"
+  }
+  ```
+
+
+
+
+
 
 ## Sigam-me os bons
 
