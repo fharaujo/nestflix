@@ -3,16 +3,17 @@
 <br><br>
 <br><br>
 
-
 ## Descrição
+
 AP RestFull criado com as tecnologias:<br>
 [Nest](https://github.com/nestjs/nest) framework TypeScript.<br>
-[Prisma](https://www.prisma.io/) ORM TypeScript.
+[Prisma](https://www.prisma.io/) ORM TypeScript.<br>
+[MySQL](https://www.mysql.com/) Banco de dados.
 
 Projeto Módulo 4 - Backend Blue Edtech.
-
+Criaçao
 <br><br>
-
+API criada entrega de trabalho e firmar conceitos de backend, utilizando citadas logo acima. Nessa Foi desenvolvido um CRUD completo e relacionamento entre Filmes, Gêneros e Participantes.
 
 ## Instalação
 
@@ -25,30 +26,42 @@ $ npm install
 ```bash
 # development
 $ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
 ```
 
 ## URI Servidor Nest JS
+
 ```
 http://localhost:3000
 ```
 
-## URI base da aplicação
+## Algumas URI's base da aplicação
+
 ```
+# rota de todos os filmes
+http://localhost:3000/v1/movies/list
+
+
+# rota buscar filme por id filmes
+http://localhost:3000/v1/movies/list/id
+
+
+# rota criar filme
 http://localhost:3000/v1/movies
+
+# rota atualizar um filme por id
+http://localhost:3000/v1/movies/update/id
+
+
+OBS: O mesmo padrão segue para as outras rotas.
+
 ```
 
-## Stay in touch
+## Sigam-me os bons
 
 - Author - [Fábio Araujo](https://github.com/fharaujo)
 - LinkedIn - [@fharaujo](https://www.linkedin.com/in/fharaujo/)
 - E-mail - [@fharaujo](mailto:araujofabio2012@gmail.com)
 
-## License
+## Licença
 
 Nest is [MIT licensed](LICENSE).
