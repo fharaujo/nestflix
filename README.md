@@ -1,4 +1,4 @@
-<p align="chttps://blueedtech.com.br/" target="blank"><img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif" width="320" alt="Nest Logo" /></a>
+<p align="https://blueedtech.com.br/" target="blank"><img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif" width="320" alt="Nest Logo" /></a>
 </p>
 <br><br>
 <br><br>
