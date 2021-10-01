@@ -63,7 +63,7 @@ OBS: O mesmo padrão segue para as outras rotas.
 
 ```
 <br><br>
-## Estruturas dos dos dados
+## Estruturas dos dados [Inserção e Atualização]
 
 
 ```
