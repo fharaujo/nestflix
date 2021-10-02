@@ -13,8 +13,10 @@ import {
 import { MoviesService } from './movies.service';
 import { createMoviesDto } from './dto/create.movies.dto';
 import { Movie } from '.prisma/client';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('v1/movies')
+@ApiTags('Movies')
 export class MoviesController {
   constructor(private readonly moviesService: MoviesService) {}
 

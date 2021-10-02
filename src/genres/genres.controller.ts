@@ -13,8 +13,10 @@ import {
 import { GenresService } from './genres.service';
 import { createGenresDto } from './dto/create.genres.dto';
 import { Genre } from '.prisma/client';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('/v1/genres')
+@ApiTags('Genres')
 export class GenresController {
   constructor(private readonly genresService: GenresService) {}
 
