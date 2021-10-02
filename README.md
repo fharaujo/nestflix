@@ -12,7 +12,8 @@ Blue Edtech - Fábio Araujo - Projeto NestFlix
 AP RestFull criado com as tecnologias:<br>
 [Nest](https://github.com/nestjs/nest) framework TypeScript.<br>
 [Prisma](https://www.prisma.io/) ORM TypeScript.<br>
-[MySQL](https://www.mysql.com/) Banco de dados.
+[MySQL](https://www.mysql.com/) Banco de dados.<br>
+[Swagger](https://swagger.io/) Documentação Swagger.
 
 Projeto Módulo 4 - Backend Blue Edtech.
 Criaçao
