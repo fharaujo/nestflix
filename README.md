@@ -17,7 +17,7 @@ AP RestFull criado com as tecnologias:<br>
 Projeto Módulo 4 - Backend Blue Edtech.
 Criaçao
 <br><br>
-API criada entrega de trabalho e firmar conceitos de backend, utilizando citadas logo acima. Nessa Foi desenvolvido um CRUD completo e relacionamento entre Filmes, Gêneros e Participantes.
+API criada para entrega de trabalho e firmar conceitos de backend, utilizando citadas logo acima. Nessa Foi desenvolvido um CRUD completo e relacionamento entre Filmes, Gêneros e Participantes.
 
 ## Instalação
 
