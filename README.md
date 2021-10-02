@@ -39,6 +39,13 @@ $ npm run start
 http://localhost:3000
 ```
 
+<br>
+## URI Documentação Swagger
+
+```
+http://localhost:3000/api
+```
+
 ## URI's base da aplicação
 
 ```
