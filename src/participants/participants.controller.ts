@@ -57,9 +57,9 @@ export class ParticipantsController {
     return this.participantsService.updateParticipant(id, data);
   }
 
-  // route delete one movie by id
+  // route delete one participants by id
   @Delete('/delete/:id')
-  @ApiOperation({ summary: 'Delete by id one movie' })
+  @ApiOperation({ summary: 'Delete by id one participant' })
   @UsePipes(ValidationPipe)
   async deleteOneParticipant(
     @Param('id', ParseIntPipe) id: number,
