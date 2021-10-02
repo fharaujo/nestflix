@@ -29,7 +29,7 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm start start:dev      
 ```
 
 ## URI Servidor Nest JS
