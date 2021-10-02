@@ -1,8 +1,7 @@
 <p align="center"
 
-<a href="https://blueedtech.com.br/" target="blank"><img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif" width="320" alt="Nest Logo" /></a><br>
+<a href="https://blueedtech.com.br/" target="blank"><img src="https://blueedtech.com.br/wp-content/themes/blue/dist/images/logo-blue-croped.gif" width="420" alt="Nest Logo" /></a><br>
 Blue Edtech - Fábio Araujo - Projeto NestFlix
-
 </p>
 <br><br>
 <br><br>
@@ -46,6 +45,14 @@ http://localhost:3000
 ```
 http://localhost:3000/api
 ```
+<br>
+<p align="center"
+
+<a href="https://swagger.io/" target="blank"><img src="https://uploaddeimagens.com.br/images/003/461/550/full/Screenshot_from_2021-10-01_21-48-25.png?1633135741" width="320" alt="Nest Logo" /></a><br>
+Blue Edtech - Fábio Araujo - Projeto NestFlix
+</p>
+
+<br><br>
 
 ## URI's base da aplicação
 
