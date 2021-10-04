@@ -48,7 +48,7 @@ http://localhost:3000/api
 <br>
 <p align="center"
 
-<a href="https://swagger.io/" target="blank"><img src="https://uploaddeimagens.com.br/images/003/461/550/full/Screenshot_from_2021-10-01_21-48-25.png?1633135741" width="720" alt="Doc Swagger API" /></a><br>
+<a href="https://swagger.io/" target="blank"><img src="https://uploaddeimagens.com.br/images/003/461/550/full/Screenshot_from_2021-10-01_21-48-25.png" width="720" alt="Doc Swagger API" /></a><br>
 Documentação Swagger - Fábio Araujo - Projeto NestFlix
 </p>
 
